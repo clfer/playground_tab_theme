@@ -37,7 +37,5 @@ function updateWindowColor(windowId, color) {
 }
 
 function getRandomColor() {
-    var availableColors = ['#D33', '#3D3', '#33D'];
-    var colorId = Math.floor(Math.random() * availableColors.length);
-    return availableColors[colorId];
+    return '#'+(Math.random()*0xFFFFFF<<0).toString(16);
 }
